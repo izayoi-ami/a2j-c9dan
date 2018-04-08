@@ -17,3 +17,11 @@ export const updateAgeOfRetirement = (state, age) => {
 export const updateExpenses = (state, expenses) => {
   state.expenses = expenses
 }
+
+export const updateAnywork = (state, anywork) => {
+  state.anywork = anywork
+}
+
+export const updateCurrentIncome = (state, income) => {
+  state.currentIncome = income
+}

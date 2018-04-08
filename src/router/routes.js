@@ -40,6 +40,14 @@ export default [
   },
 
   {
+    path: '/anywork',
+    component: () => import('layouts/default'),
+    children: [
+      { path: '', component: () => import('pages/AnyWork') }
+    ]
+  },
+
+  {
     path: '/summary',
     component: () => import('layouts/default'),
     children: [

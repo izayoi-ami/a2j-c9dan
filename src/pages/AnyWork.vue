@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <p>Have you worked betweeni <!-- {{ this.$store.state.dates.dateOfAccident }} and {{ this.$store.state.dates.dateOfTrial }}? --></p>
+    <p>Have you worked betweeni {{ this.$store.state.dates.dateOfAccident }} and {{ this.$store.state.dates.dateOfTrial }}? </p>
   <q-btn-toggle
     v-model="anywork"
     toggle-color="primary"

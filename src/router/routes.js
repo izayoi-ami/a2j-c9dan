@@ -1,58 +1,35 @@
+
 export default [
   {
     path: '/',
     component: () => import('layouts/default'),
     children: [
-      { path: '', component: () => import('pages/index') }
+      { path: '', component: () => import('pages/index') },
+      { path: '/result', component: () => import('pages/result') },
+      { path: '/lossOfSociety', component: () => import('pages/lossOfSociety') },
+      { path: '/medicalReport', component: () => import('pages/medicalReport') },
+      { path: '/summary', component: () => import('pages/summary') }
     ]
   },
 
   {
-    path: '/date',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/DateOfAccident') }
-    ]
+    path: '/result',
+    component: () => import('pages/result')
   },
 
   {
-    path: '/basic',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/basic') }
-    ]
+    path: '/lossOfSociety',
+    component: () => import('pages/lossOfSociety')
   },
 
   {
-    path: '/employment',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/employment') }
-    ]
-  },
-
-  {
-    path: '/expenses',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/expenses') }
-    ]
-  },
-
-  {
-    path: '/anywork',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/AnyWork') }
-    ]
+    path: '/medicalReport',
+    component: () => import('pages/medicalReport')
   },
 
   {
     path: '/summary',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/summary') }
-    ]
+    component: () => import('pages/summary')
   },
 
   { // Always leave this as last one

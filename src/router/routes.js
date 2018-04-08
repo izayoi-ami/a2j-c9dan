@@ -39,6 +39,14 @@ export default [
     ]
   },
 
+  {
+    path: '/summary',
+    component: () => import('layouts/default'),
+    children: [
+      { path: '', component: () => import('pages/summary') }
+    ]
+  },
+
   { // Always leave this as last one
     path: '*',
     component: () => import('pages/404')

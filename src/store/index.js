@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import example from './module-example'
-import data from './data'
+import dates from './dates'
+import profile from './profile'
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
   modules: {
-    example,
-    data
+    dates,
+    profile
   }
 })
 
